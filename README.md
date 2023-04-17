@@ -11,7 +11,7 @@ A dev environment is a virtual machine workspace which runs in the cloud or a lo
 ![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
 
 ## What makes a good DevOps Environment?
-![Ease of Use (1)](https://user-images.githubusercontent.com/129324316/232555327-f82f7a6f-b409-4281-a03e-8333f7524072.png)
+![Ease of Use (2)](https://user-images.githubusercontent.com/129324316/232555608-99673018-7818-4eb3-83c4-e035766a52f5.png)
 
 
 ## Vagrant Cheatsheet
