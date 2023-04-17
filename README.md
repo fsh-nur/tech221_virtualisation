@@ -2,7 +2,7 @@
 
 ## What is a virtual machine?
 A virtual machine is emulated equivalent of a computer system that runs on top of another system.
-
+![Ease of Use (3)](https://user-images.githubusercontent.com/129324316/232559134-60a96d95-171f-4431-90c4-430dfea0f46d.png)
 
 ## What is a dev environment?
 A dev environment is a virtual machine workspace which runs in the cloud or a local data center, where can run software outside of our local machine. They are useful to developers as they can create and innovate applications without breaking something in a live environment.
@@ -11,7 +11,8 @@ A dev environment is a virtual machine workspace which runs in the cloud or a lo
 ![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
 
 ## What makes a good DevOps Environment?
-![Ease of Use (2)](https://user-images.githubusercontent.com/129324316/232555608-99673018-7818-4eb3-83c4-e035766a52f5.png)
+
+![Ease of Use (2)](https://user-images.githubusercontent.com/129324316/232559340-41c2ab79-7d7c-480c-b457-85b6fb9e6f94.png)
 
 
 ## Vagrant Cheatsheet
