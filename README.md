@@ -90,3 +90,7 @@ or not commonly used. To see all subcommands, run the command
         --timestamp                  Enable timestamps on log output
         --debug-timestamp            Enable debug output with timestamps
         --no-tty                     Enable non-interactive output
+        
+        
+ ## The 4 Important Areas of DevOps
+![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
