@@ -7,6 +7,11 @@ A virtual machine is emulated equivalent of a computer system that runs on top o
 ## What is a dev environment?
 A dev environment is a virtual machine workspace which runs in the cloud or a local data center, where can run software outside of our local machine. They are useful to developers as they can create and innovate applications without breaking something in a live environment.
 
+ ## The 4 Important Areas of DevOps
+![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
+
+## What makes a good DevOps Environment?
+![Ease of Use (1)](https://user-images.githubusercontent.com/129324316/232555327-f82f7a6f-b409-4281-a03e-8333f7524072.png)
 
 
 ## Vagrant Cheatsheet
@@ -92,5 +97,4 @@ or not commonly used. To see all subcommands, run the command
         --no-tty                     Enable non-interactive output
         
         
- ## The 4 Important Areas of DevOps
-![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
+
