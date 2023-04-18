@@ -48,10 +48,18 @@ Add to our shell script the following commands:
 5. Navigate to the /app directory `cd /home/vagrant/app`
 8. Then install packages `sudo npm install`
 9. Input `vagrant up` in terminal in VSCode
-10. Input `vagrant ssh` in GitBash
-11. cd into app directory to run the app `cd app`
-12. Run the app using `npm install` or `node app.js`
-13. You should see this when inputting IP address into web browser:
+
+
+How your shellscript should look:
+
+![provisonsh](https://user-images.githubusercontent.com/129324316/232813912-2a69e4e1-43b4-47c0-8935-ef524c3f2f99.png)
+
+
+
+11. Input `vagrant ssh` in GitBash
+12. cd into app directory to run the app `cd app`
+13. Run the app using `npm install` or `node app.js`
+14. You should see this when inputting IP address into web browser:
 
 ![sparta test app](https://user-images.githubusercontent.com/129324316/232808671-e59e08f5-718a-4716-967d-6b106b114145.png)
 
