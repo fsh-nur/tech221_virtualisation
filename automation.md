@@ -39,4 +39,13 @@ vagrant up
 4. You should see the following page when inputting the IP address in the vagrant file:
 ![nginx vagrant](https://user-images.githubusercontent.com/129324316/232787060-50acda80-884c-4722-879b-84e837fe9862.png)
 
+### Automate App Deployment in Vagrant:
+Add to our shell script the following commands:
+1. Install python software properties `sudo apt-get install python-software-properties`
+2. Get the set-up file for version 6 of Nodejs `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
+3. Install node.js `sudo apt-get install nodejs -y`
+4. Install process manager `sudo npm install pm2 -g`
+5. Navigate to the /app directory `cd /home/vagrant/app`
+6. Install NPM dependencies `sudo npm install`
+
 
