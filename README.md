@@ -46,8 +46,8 @@ A dev environment is a virtual machine workspace which runs in the cloud or a lo
 
 ## Monolithic Architecture vs 2-tier Architecture vs Microservices
 
-- The most basic form of architecture is ** monolithic architecture **, this is where all work is done on one server, and all software and applications are run on one single server. You can imagine that there is a lot of risk when it comes to this as if the server crashes, it will be very difficult to recover any work.
+- The most basic form of architecture is **monolithic architecture**, this is where all work is done on one server, and all software and applications are run on one single server. You can imagine that there is a lot of risk when it comes to this as if the server crashes, it will be very difficult to recover any work.
 
-- As a DevOps team, 2-tier architecture is adopted instead which is more reliable. This is made up of an app and a database, which support each other, where if one of them is down, the other can be recovered.
+- As a DevOps team, **2-tier architecture** is adopted instead which is more reliable. This is made up of an app and a database, which support each other, where if one of them is down, the other can be recovered.
 
--**Microservices** architecture is seen as even better as it is broken down into smaller pieces so it becomes more robust.
+- **Microservices architecture** is seen as even better as it is broken down into smaller pieces so it becomes more robust.
