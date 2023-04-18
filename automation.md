@@ -46,6 +46,14 @@ Add to our shell script the following commands:
 3. Install node.js `sudo apt-get install nodejs -y`
 4. Install process manager `sudo npm install pm2 -g`
 5. Navigate to the /app directory `cd /home/vagrant/app`
-6. Install NPM dependencies `sudo npm install`
+8. Then install packages `sudo npm install`
+9. Input `vagrant up` in terminal in VSCode
+10. Input `vagrant ssh` in GitBash
+11. cd into app directory to run the app `cd app`
+12. Run the app using `npm install` or `node app.js`
+13. You should see this when inputting IP address into web browser:
+
+![sparta test app](https://user-images.githubusercontent.com/129324316/232808671-e59e08f5-718a-4716-967d-6b106b114145.png)
+
 
 
