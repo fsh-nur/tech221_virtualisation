@@ -51,3 +51,6 @@ A dev environment is a virtual machine workspace which runs in the cloud or a lo
 - As a DevOps team, **2-tier architecture** is adopted instead which is more reliable. This is made up of an app and a database, which support each other, where if one of them is down, the other can be recovered.
 
 - **Microservices architecture** is seen as even better as it is broken down into smaller pieces so it becomes more robust.
+![Monolith](https://user-images.githubusercontent.com/129324316/232812367-d4057afb-cbd0-483c-885f-406c508af409.png)
+
+
