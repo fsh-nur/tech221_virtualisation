@@ -10,9 +10,36 @@ A dev environment is a virtual machine workspace which runs in the cloud or a lo
  ## The 4 Important Areas of DevOps
 ![Ease of Use](https://user-images.githubusercontent.com/129324316/232518794-30e83636-ce14-483e-8d99-f7a23e91d8f1.png)
 
+—Cost
+
+- We need to make sure that companies are being as efficient as possible
+- Cost is often overlooked can we get a more basic package
+- For example scaling how powerful a machine do we need
+
+—Flexibility
+
+- Being aware of vendor lock-in
+- Being flexible when it comes to the tools we need
+- Everything the company uses should be easily transferred to another software/tool
+
+—Ease of Use
+
+- Making things as easy as possible for developers to do their job and use.
+- If devs do not use our tools there will be headaches down the line.
+
+—Robustness
+
+- We need as close to 100% uptime of our services as possible.
+
 ## What makes a good DevOps Environment?
 
 ![Ease of Use (2)](https://user-images.githubusercontent.com/129324316/232559340-41c2ab79-7d7c-480c-b457-85b6fb9e6f94.png)
+
+- User friendly, fast and robust: Dev environments doing dev work in our environment instead
+- Dev environment should be as close to the production environment as possible, so you can catch errors in the dev environment before it gets to the production environment.
+- It should support one application only: Different apps may require different versions of a software, there may be conflicts such as different apps.
+- It should be the same for everyone everywhere to avoid conflicts
+- It should be easy to update
 
 
 ## Vagrant Cheatsheet
