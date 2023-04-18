@@ -1,4 +1,4 @@
-# How to provision in vagrant
+# How to provision nginx installation and enabling in vagrant
 
 
 ### Create a shell script
@@ -38,4 +38,5 @@ vagrant up
 ```
 4. You should see the following page when inputting the IP address in the vagrant file:
 ![nginx vagrant](https://user-images.githubusercontent.com/129324316/232787060-50acda80-884c-4722-879b-84e837fe9862.png)
+
 
