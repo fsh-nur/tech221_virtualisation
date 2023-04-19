@@ -49,3 +49,11 @@ pm2 start app.js
 
 ![pm2](https://user-images.githubusercontent.com/129324316/233121137-bb3430c4-83ce-4e06-a5f2-41762a5ec6e6.png)
 
+## How to kill the background process:
+
+1. Input the command 
+```
+ pm2 stop 0
+```
+Where `0` is the app id
+
