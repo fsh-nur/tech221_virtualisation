@@ -45,5 +45,7 @@ cd app
 pm2 start app.js
 ```
 10. You can see the app is online and in the background here:
+
+
 ![pm2](https://user-images.githubusercontent.com/129324316/233121137-bb3430c4-83ce-4e06-a5f2-41762a5ec6e6.png)
 
