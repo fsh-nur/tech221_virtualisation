@@ -1,7 +1,7 @@
-# How to provision nginx installation and enabling in vagrant
+# How to provision installation and enabling in vagrant
 
 
-### Create a shell script
+### Create a shell script for nginx and app deployment
 1. Create a shell script in your local host called provision.sh
 
 2. Input the shebang:
@@ -60,5 +60,13 @@ How your shellscript should look:
 
 ![sparta test app](https://user-images.githubusercontent.com/129324316/232808671-e59e08f5-718a-4716-967d-6b106b114145.png)
 
+### Automating MongoDB
 
+1. Create a seperate provision.sh file in the environment directory
+2. Modify the vagrant file y adding a path to this provision file
+```
+    db.vm.provision "shell", path: "./environment/provision.sh"
+
+```
+3. 
 
