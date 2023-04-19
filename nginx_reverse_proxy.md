@@ -21,3 +21,31 @@ There are forward proxies and reverse proxies.A reverse proxy is a server that f
 |The proxy then evaluates and inspects any response,|  This server is called the “origin server” since it’s what will actually be responding to requests.|
 |takes action as needed,||
 |forwards it to the originating client if appropriate||
+
+
+## Nginx reverse proxy steps
+
+1. Modify the location in the default file, using command ` sudo nano /etc/nginx/sites-available/default
+2. Add the location to the file as shown, making sure you include port 3000:
+```
+   location / {
+       proxy_pass http://192.168.10.100:3000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection 'upgrade';
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+   }
+   
+
+```
+
+3. Check for any syntax error using ` sudo nginx -t`
+4. Restard nginx ` sudo systemctl restart nginx`
+5. Navigate to the app directory `cd app`
+6. Run `npm install`
+7. Launch the app ` node app.js`
+8. Check if the app is running by entering your IP into your browser
+9. You should see the following page:
+![sparta test app](https://user-images.githubusercontent.com/129324316/233016094-d0f3ced4-2c4f-4793-b95d-b6447bc5df13.png)
+
