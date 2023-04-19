@@ -16,11 +16,11 @@ There are forward proxies and reverse proxies.A reverse proxy is a server that f
 | Forward Proxy | Reverse Proxy |
 | :------------ | ------------: |
 | ![Forward Proxy](https://user-images.githubusercontent.com/129324316/233011461-0830e2f8-f215-49ae-91b2-5741de06d861.png)|![Forward Proxy (1)](https://user-images.githubusercontent.com/129324316/233011758-1138e6f3-9100-4fa2-978b-1dbb258cac9e.png)               |
-| It evaluates client requests, |Instead of connecting directly to a website serving content|
-|takes any needed actions, and routes the request to the destination on the client’s behalf.|a reverse proxy like NGINX can sit in the middle. When it receives a request from a user, it will send forward, or “proxy,” that request to the final server.|
-|The proxy then evaluates and inspects any response,|  This server is called the “origin server” since it’s what will actually be responding to requests.|
-|takes action as needed,||
-|forwards it to the originating client if appropriate||
+|Client sends a request |Client sends a request|
+|Proxy routes the request to requested destination|Reverse proxy sends request to original server|
+|The proxy then evaluates and inspects any response|This server is called the “origin server” since it’s what will actually be responding to requests.|
+|Proxy takes action as needed|Reverse proxy crafts response based on data returned from the server|
+|Forwards it to the originating client if appropriate|Sends response back to client|
 
 
 ## Nginx reverse proxy steps
