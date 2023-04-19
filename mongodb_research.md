@@ -14,7 +14,8 @@
 - Adapted to handle huge amounts of data and is very fast.
 - This format directly maps to native objects in most modern programming languages, making it a natural choice for developers, as they don’t need to think about normalizing data.
 
-**Make a diagram to show MongoDB architecture for storing data.**
+![image](https://user-images.githubusercontent.com/129324316/233049386-9b8686e4-9aa7-4a89-8358-92895eec084e.png)
+
 
 **What is seeding in MongoDB? Why do Mongo databases need to be seeded?**
 - Seeding your MongoDB database can help you to get some data within your Mongo collection
