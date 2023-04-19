@@ -25,7 +25,7 @@ There are forward proxies and reverse proxies.A reverse proxy is a server that f
 
 ## Nginx reverse proxy steps
 
-1. Modify the location in the default file, using command ` sudo nano /etc/nginx/sites-available/default
+1. Modify the location in the default file, using command ` sudo nano /etc/nginx/sites-available/default`
 2. Add the location to the file as shown, making sure you include port 3000:
 ```
    location / {
