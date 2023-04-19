@@ -34,7 +34,7 @@
 7. Install python software package which adds new software repositories to a system's package source. `sudo apt-get install python-software-properties`
 8. Install the version 6 of nodejs `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -g` the input `sudo apt-get install nodejs -y`
 9. In order to make sure this is the correct version input `nodejs --version`
-10.  Install pm2 package manager for nodejs `sudo npm install pm2 -g`
+10.  Install pm2 process manager for nodejs `sudo npm install pm2 -g`
 11.  In order to run our app we must install nodejs package dependencies.
      -- cd into our app on GitBash `cd app`
      -- input `npm install`
