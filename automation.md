@@ -60,7 +60,9 @@ How your shellscript should look:
 
 ![sparta test app](https://user-images.githubusercontent.com/129324316/232808671-e59e08f5-718a-4716-967d-6b106b114145.png)
 
-### Automating MongoDB
+### Automating MongoDB download
+
+#### Make sure you vagrant destroy in case there are other VMs running
 
 1. Create a seperate provision.sh file in the environment directory
 2. Modify the vagrant file y adding a path to this provision file
@@ -68,5 +70,53 @@ How your shellscript should look:
     db.vm.provision "shell", path: "./environment/provision.sh"
 
 ```
-3. 
+3. Input the shebang in the provision file
+```
+#!/bin/bash
+```
+4. Update the system 
+```
+sudo apt update -y
+```
+4. Upgrade the system
+```
+sudo apt upgrade -y
 
+```
+5. Input the key and `echo` the key out which contains the url where MongoDB packages will be obtained
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
+
+echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+```
+6. Update and Upgrade again, this time with the keys obtained
+```
+sudo apt update -y
+sudo apt upgrade -y
+```
+7. Now install MongoDB in our VM machine
+```
+sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
+
+```
+8. Now we start MongoDB
+```
+sudo systemctl start mongod
+
+```
+9. And we check the status to see if MongoDB is running on automation
+```
+sudo systemctl status mongod
+
+```
+10. Our provision.sh should look like this
+
+
+![provison sh mongodb](https://user-images.githubusercontent.com/129324316/233086360-fdb240bb-dcde-4c1d-bf0c-d2f489801601.png)
+
+
+11. Now we start our virtual machine
+```
+vagrant up db
+```
