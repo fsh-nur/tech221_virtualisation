@@ -51,9 +51,12 @@ pm2 start app.js
 
 ## How to kill the background process:
 
-1. Input the command 
+1. Input the command where `0` is the app id:
 ```
  pm2 stop 0
 ```
-Where `0` is the app id
+2. You should see the following:
+
+![stop app](https://user-images.githubusercontent.com/129324316/233127203-5757aec6-1a88-430f-b635-5c90cf796b44.png)
+
 
