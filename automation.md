@@ -105,18 +105,25 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 sudo systemctl start mongod
 
 ```
-9. And we check the status to see if MongoDB is running on automation
+9. Our provision.sh should look like this
+
+![provison sh mongodb](https://user-images.githubusercontent.com/129324316/233090929-f0b1fc5f-fb69-4a01-85e6-388bf822f70b.png)
+
+10. Now we start our virtual machine
+```
+vagrant up db
+```
+11. We ssh into our db vm
+
+```
+vagrant ssh db
+```
+12. And we check the status to see if MongoDB is running on automation
 ```
 sudo systemctl status mongod
 
 ```
-10. Our provision.sh should look like this
+13. You should see this as the output if your automation was successful
 
+![mongodb automation](https://user-images.githubusercontent.com/129324316/233090590-a212db04-dcc0-4b8a-ae84-95b27dead429.png)
 
-![provison sh mongodb](https://user-images.githubusercontent.com/129324316/233086360-fdb240bb-dcde-4c1d-bf0c-d2f489801601.png)
-
-
-11. Now we start our virtual machine
-```
-vagrant up db
-```
