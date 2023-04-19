@@ -49,4 +49,45 @@ vagrant ssh app
 ```
 vagrant ssh db
 ```
+## Download MongoDB in our system
+
+14. Update the system in the db GitBash
+```
+sudo apt update -y
+```
+15. Upgrade the system in the db GitBash
+```
+sudo apt upgrade -y
+```
+16. Get the MongoDB key and import MongoDB key
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
+```
+17. Obtain the MongoDB key in order to download our specific MongoDB on the web
+```
+echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+```
+18. Update the system in order to grab all mongoDB packages
+```
+sudo apt update -y
+```
+19. Upgrade the system in order to obtain all mongoDB packages
+```
+sudo apt upgrade -y
+```
+20. Now we download MongoDB 
+```
+sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
+```
+21. Start MongoDB 
+```
+sudo systemctl start mongod
+```
+22. Check the status to see if it is running properly
+```
+sudo systemctl status mongod
+```
+23. If everything is well you should see this in GitBash:
+
+![mongodb correct](https://user-images.githubusercontent.com/129324316/233082455-1b5dd56c-2d82-45ac-ac91-43b7a0a921a4.png)
 
