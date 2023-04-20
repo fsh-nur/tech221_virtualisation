@@ -94,3 +94,17 @@ node app.js
 
 
 ![posts](https://user-images.githubusercontent.com/129324316/233399621-d4c3d826-f3a5-4bc7-9d28-d4409cae7cc7.png)
+
+
+## Automating the edit of the MongoDB config file:
+
+1. Input the following into the provisioning script for MongoDB in order to change the IP:
+```
+echo "bindIp: 0.0.0.0" | sudo tee -a /etc/mongod.conf
+
+```
+2. Enter these two commands in order to set the change in IP and reload MongoDB:
+```
+sudo systemctl restart mongod
+sudo systemctl enable mongod
+```
